@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react';
 import QrCard from '../components/QrCard/QrCard';
 
 const Home = () => {
