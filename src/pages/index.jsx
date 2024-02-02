@@ -1,12 +1,12 @@
 import { Icon } from '@iconify/react';
+import QrCard from '../components/QrCard/QrCard';
 
 const Home = () => {
-    return ( 
-        <div className="main">
-            This is home page
-             <Icon icon="circum:facebook" width="1.2em" height="1.2em" />
-        </div>
-     );
+    return (
+        <>
+            <QrCard />
+        </>
+    );
 }
- 
+
 export default Home;
