@@ -1,17 +1,14 @@
-// import { Icon } from '@iconify/react';
-// import Navbar from "../components/shared/Navbar/Navbar";
-import styles from "./Home.module.scss";
-import QRgen from "../components/qrGenerator/QRGenerator";
 
+// import { Icon } from '@iconify/react';
+import Hero from '../components/Hero';
 
 const Home = () => {
+    return ( 
+        <div className="main">
+             <Hero/>
+        </div>
+     );
+}
  
-
-  return (
-    <div className={styles.main}>
-      <QRgen/>
-    </div>
-  );
-};
 
 export default Home;
