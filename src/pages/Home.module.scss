@@ -1,0 +1,19 @@
+.main{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+    .qrBox{
+        width:25rem;
+        height: 30rem;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
+}
