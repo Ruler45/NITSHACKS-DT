@@ -1,13 +1,68 @@
-.qrBox{
-    width:25rem;
-    height: 30rem;
+.qrSection {
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  padding: 2% 4%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  button {
+    padding: 12px 24px;
+    border: 1px solid #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    background: #111111;
+    border: 1px solid #333;
+    color: #fefefe;
+    border-radius: 30px;
+    width: fit-content;
+  }
+
+  .inputBox {
+    // height: 80%;
+    width: 40%;
+    font-size: 2rem;
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    input {
+      width: 80%;
+      height: 20%;
+      font-size: 1.5rem;
+      //   text-align: center;
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: 1px solid gray;
+      border-radius: 1rem;
+    }
+    label {
+      width: 80%;
+      height: 20%;
+      font-size: 1.2rem;
+      color: gray;
+      //   text-align: center;
+    }
+  }
+
+  .qrArea {
+    // height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    .qrBox {
+      height: 10rem;
+      width: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // object-fit: cover;
+      border: 1px solid black;
+    }
+  }
 }

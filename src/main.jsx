@@ -9,6 +9,7 @@ import "./index.scss";
 // Route imports are now done in the router
 import Home from "./pages";
 import About from "./pages/about/page";
+import Generator from "./pages/generator/page";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About/>,
+  },
+  {
+    path:"/qr",
+    element: <Generator/>
   }
 ]);
 
