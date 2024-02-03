@@ -1,13 +1,12 @@
-import React from 'react'
+
 import {Link} from 'react-router-dom'
 import styles from './Hero.module.scss'
+import Navbar from './Navbar/Navbar'
 
 const Hero = () => {
     return (
         <>
-            <div className={styles.nav}>
-                <h2>qr</h2>
-            </div>
+            <Navbar/>
             <div className={styles.hero}>
                 <div className={styles.left}>
                     <h2>Create Your Free QR Codes</h2>
@@ -15,7 +14,7 @@ const Hero = () => {
                         QR Code Generator. Use QR codes to drive traffic and
                         increase sales when customers scan your printed or
                         digital code</p>
-                    <Link><button>Create QR Code</button></Link>
+                    <Link to="/qr"><button>Create QR Code</button></Link>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.box}></div>
