@@ -8,8 +8,15 @@
     left: 0;
 
     h2 {
-        padding: 2rem 2.5rem;
-        font-size: 2rem;
+        padding: 2rem 5rem;
+        font-size: 5rem;
         font-weight: 1000;
+    }
+}
+@media(max-width:900px){
+    .nav{
+        h2{
+            font-size: 3rem;
+        }
     }
 }

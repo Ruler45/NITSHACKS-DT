@@ -13,12 +13,16 @@
 .hero {
   display: flex;
   align-items: center;
-  position: relative;
-  justify-content: left;
+  // position: relative;
+  justify-content: space-between;
   width: 100%;
   min-height: 100vh;
   .left {
-    padding: 8rem 8rem;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+   
+    padding: 8rem 5rem;
     width: 60%;
 
     h2 {
@@ -31,7 +35,7 @@
     }
 
     button {
-      padding: 12px 24px;
+      padding: 1.3rem 1.5rem;
       border: 1px solid #333;
       font-weight: 700;
       text-transform: uppercase;
@@ -51,12 +55,42 @@
     align-items: center;
     justify-content: right;
     width: 40%;
-    position: absolute;
-    right: 0;
     .box {
       height: 30rem;
-      width: 50%;
+      width: 70%;
       background-color: blue;
+    }
+  }
+}
+@media(max-width:900px) {
+  .hero{
+    flex-direction: column;
+    .right{
+      justify-content: center;
+      align-items: center;
+      .box{
+      height: 10rem;
+      }
+    }
+    .left{
+      padding: 8rem 0;
+    }
+  }
+  .left{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    h2{
+      padding-top: 5rem;
+    }
+  }
+  .right{
+   
+    .box{
+      height: 15rem;
+      width: 50%;
+
     }
   }
 }
